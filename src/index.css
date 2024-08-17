@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    box-sizing: border-box;
+    color: #141414;     /* gray_5_black */
+  }
+  .jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .noto-sans-tc {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .title_e_large {
+    @apply jost text-[54px] leading-[1.6] tracking-[0.1em] text-gray_5_black;
+  }
+  .title_e_medium {
+    @apply jost text-[50px] leading-[1.6] tracking-[0.1em] text-gray_5_black;
+  }
+  .title_e_small {
+    @apply jost text-[40px] leading-[1.6] tracking-[0.1em] text-gray_5_black;
+  }
+  .sub_large {
+    @apply noto-sans-tc text-[16px] leading-[1.8] tracking-[0.08em] text-gray_5_black;
+  }
+  .sub_medium {
+    @apply noto-sans-tc text-[15px] leading-[1.8] tracking-[0.08em] text-gray_5_black;
+  }
+  .body_large {
+    @apply noto_sans-tc text-[16px] leading-[2] tracking-[0.08em] text-gray_5_black;
+  }
+  .body_medium {
+    @apply noto-sans-tc text-[15px] leading-[2] tracking-[0.08em] text-gray_5_black;
+  }
+  .short_text_large {
+    @apply noto-sans-tc text-[16px] leading-[1.8] tracking-[0.08em] text-gray_5_black;
+  }
+  .flex_image_width {
+    @apply mx-auto max-w-[390px] sm:max-w-[480px] png_md:max-w-[768px] lg:max-w-[992px] xl:max-w-[1120px];
+  }
+}
+
+@layer utilities {
+  .neon-text {
+    @apply text-gray_5_black;
+    text-shadow: 0px 0px 16px white, 0px 0px 16px white;
+  }
+}
+
+html, body {
+  width: 100%;
+}

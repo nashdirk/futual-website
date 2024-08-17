@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  .area {
+    border-radius: 30px;
+    background-color: white;
+    padding: 6px 12px;
+  }
+} 
