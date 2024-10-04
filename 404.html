@@ -1,7 +1,19 @@
 <html>
-  <head>
-  </head>
+  <head> </head>
   <script>
-    window.location.pathname = '/'
+    (function () {
+      var path = window.location.pathname;
+      var validPaths = [
+        "/project/river_protection",
+        "/project/trash_can_re-design",
+        "/project/green_finance",
+      ];
+
+      if (validPaths.includes(path)) {
+        window.location.href = path + "/";
+      } else {
+        window.location.href = "/";
+      }
+    })();
   </script>
 </html>
